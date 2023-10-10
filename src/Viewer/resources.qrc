@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>img/authors.png</file>
+        <file>img/open.png</file>
+        <file>img/press.png</file>
+        <file>gandolf_sax.mp3</file>
+        <file>img/logo.png</file>
+        <file>img/main.png</file>
+    </qresource>
+</RCC>

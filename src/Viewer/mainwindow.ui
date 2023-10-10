@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1313</width>
+    <height>847</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	border-image: url(:/new/prefix1/img/main.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1161</x>
+      <y>20</y>
+      <width>131</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-image: url(:/new/prefix1/img/open.png);
+}
+
+QPushButton:pressed {
+	border-image: url(:/new/prefix1/img/press.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_name">
+    <property name="geometry">
+     <rect>
+      <x>841</x>
+      <y>20</y>
+      <width>311</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>File name: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_vertexes">
+    <property name="geometry">
+     <rect>
+      <x>841</x>
+      <y>120</y>
+      <width>311</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Number of vertexes: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_edges">
+    <property name="geometry">
+     <rect>
+      <x>841</x>
+      <y>70</y>
+      <width>311</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Number of edges: </string>
+    </property>
+   </widget>
+   <widget class="MyClass" name="widget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>791</width>
+      <height>791</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="translate_x">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>190</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Translate by X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="translate_y">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>220</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Translate by Y</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="translate_z">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>250</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Translate by Z</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rotate_x">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>310</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Rotate by X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rotate_y">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>340</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Rotate by Y</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rotate_z">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>370</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Rotate by Z</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scale_model">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>430</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Scale the model</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="trans_x_line">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>190</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="trans_y_line">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>220</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="trans_z_line">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>250</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rotate_x_line">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>310</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rotate_y_line">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>340</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rotate_z_line">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>370</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="scale_line">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>430</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="translateButton">
+    <property name="geometry">
+     <rect>
+      <x>1191</x>
+      <y>190</y>
+      <width>100</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>18</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: #66FFCC;
+	background-color: #0099FF;
+	border: 2px solid black;
+	border-radius: 10px
+}
+
+QPushButton:pressed{
+	color: black;
+	background-color: gray;
+}</string>
+    </property>
+    <property name="text">
+     <string>Translate</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rotateButton">
+    <property name="geometry">
+     <rect>
+      <x>1191</x>
+      <y>310</y>
+      <width>100</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: #66FFCC;
+	background-color: #0099FF;
+	border: 2px solid black;
+	border-radius: 10px
+}
+
+QPushButton:pressed{
+	color: black;
+	background-color: gray;
+}</string>
+    </property>
+    <property name="text">
+     <string>Rotate</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scaleButton">
+    <property name="geometry">
+     <rect>
+      <x>1191</x>
+      <y>420</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: #66FFCC;
+	background-color: #0099FF;
+	border: 2px solid black;
+	border-radius: 10px
+}
+
+QPushButton:pressed{
+	color: black;
+	background-color: gray;
+}</string>
+    </property>
+    <property name="text">
+     <string>Scale</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="thincknes">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>580</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Line thickness</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="vert_size">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>490</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Vertexes size</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="thick_line">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>580</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="vert_size_line">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>490</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="none_radio">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>530</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="circle_radio">
+    <property name="geometry">
+     <rect>
+      <x>1101</x>
+      <y>530</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Circle</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="square_radio">
+    <property name="geometry">
+     <rect>
+      <x>1201</x>
+      <y>530</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Square</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="smooth_radio">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>620</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Smooth</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="stippled_radio">
+    <property name="geometry">
+     <rect>
+      <x>1101</x>
+      <y>620</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Stippled</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="vertColorButton">
+    <property name="geometry">
+     <rect>
+      <x>1191</x>
+      <y>480</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: #66FFCC;
+	background-color: #0099FF;
+	border: 2px solid black;
+	border-radius: 10px
+}
+
+QPushButton:pressed{
+	color: black;
+	background-color: gray;
+}</string>
+    </property>
+    <property name="text">
+     <string>Vert color</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="vert_type">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>530</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Vertexes type</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="edgeColorButton">
+    <property name="geometry">
+     <rect>
+      <x>1191</x>
+      <y>570</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: #66FFCC;
+	background-color: #0099FF;
+	border: 2px solid black;
+	border-radius: 10px
+}
+
+QPushButton:pressed{
+	color: black;
+	background-color: gray;
+}</string>
+    </property>
+    <property name="text">
+     <string>Edge color</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="line_type">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>620</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Line type</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="projection">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>670</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Projection</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="orthogonalRadio">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>670</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Orthogonal</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="perspectiveRadio">
+    <property name="geometry">
+     <rect>
+      <x>1001</x>
+      <y>700</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+	color: yellow;
+}</string>
+    </property>
+    <property name="text">
+     <string>Perspective</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>660</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>American Typewriter</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: #66FFCC;
+	background-color: #0099FF;
+	border: 2px solid black;
+	border-radius: 10px
+}
+
+QPushButton:pressed{
+	color: black;
+	background-color: gray;
+}</string>
+    </property>
+    <property name="text">
+     <string>background
+color</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logo_label">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>730</y>
+      <width>121</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	border-image: url(:/new/prefix1/img/logo.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1313</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbout_this_App">
+    <property name="title">
+     <string>About_this_App</string>
+    </property>
+    <addaction name="actionDocumentation"/>
+    <addaction name="separator"/>
+    <addaction name="actionAuthors"/>
+   </widget>
+   <widget class="QMenu" name="menuDo_a">
+    <property name="title">
+     <string>Do_a...</string>
+    </property>
+    <addaction name="actiongif"/>
+    <addaction name="separator"/>
+    <addaction name="actionImage"/>
+   </widget>
+   <addaction name="menuAbout_this_App"/>
+   <addaction name="menuDo_a"/>
+  </widget>
+  <action name="actionDocumentation">
+   <property name="text">
+    <string>Documentation</string>
+   </property>
+  </action>
+  <action name="actionAuthors">
+   <property name="text">
+    <string>Authors</string>
+   </property>
+  </action>
+  <action name="actiongif">
+   <property name="text">
+    <string>gif</string>
+   </property>
+  </action>
+  <action name="actionImage">
+   <property name="text">
+    <string>image</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyClass</class>
+   <extends>QOpenGLWidget</extends>
+   <header>myclass.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
